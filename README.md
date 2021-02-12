@@ -1,3 +1,1 @@
 # jeongm.github.io
-
-# TIL
