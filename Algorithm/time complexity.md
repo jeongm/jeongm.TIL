@@ -24,3 +24,4 @@
 - O(C^n) – 지수 시간 : 문제를 해결하기 위한 단계의 수는 주어진 상수값 C 의 n 제곱입니다.(exponential time)   
   보통 문제를 풀기 위해 모든 조합과 방법을 시도할 때 사용됨   
   ex)길이가 n인 비밀번호를 찾아야 할 경우
+![timecomplexity](https://joshuajangblog.files.wordpress.com/2016/09/1.jpg?w=638)
