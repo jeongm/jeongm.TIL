@@ -24,6 +24,12 @@
 ![이미지 이름(아무거나 상관x)](https://pbs.twimg.com/media/EtG23UMVcAEt0tu.jpg)
 어....크기 수정 불가
 
+## 링크 넣기
+```
+[Google](https://www.google.com/)
+이미지넣기랑 비슷
+```
+[Google](https://www.google.com/)
 
 ## 줄바꿈
 ```
