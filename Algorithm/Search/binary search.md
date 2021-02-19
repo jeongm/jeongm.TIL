@@ -62,5 +62,5 @@ def bina_search(a: Sequence, key: Any) -> int:
         if pl > pr:            # 실행 회수 : logn    복잡도: O(logn)
             return -1         # 실행 회수 : 1    복잡도: O(1)
 ```
-- 시간 복잡도 : 이진 검색 알고리즘은 반복할 때마다 검색 범위가 거의 절반으로 줄어드므로
-- 평균: logn, 실패 시: log(n+1), 성공: log n-1
+- 시간 복잡도 : 이진 검색 알고리즘은 반복할 때마다 검색 범위가 거의 절반으로 줄어듦
+- 평균: O(logn)(실패 시: log(n+1), 성공 시: log n-1)
