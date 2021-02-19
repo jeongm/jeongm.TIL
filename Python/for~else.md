@@ -1,6 +1,4 @@
-2021.02.15
-
-### for~else 문
+## for~else 문
 
 파이썬에서는 else문을 for문과 같이 쓸 수 있다.   
 for문과 같은 레벨에 else를 둬 for문에서 break가 실행되지 않았을 경우 else문이 실행된다.   
