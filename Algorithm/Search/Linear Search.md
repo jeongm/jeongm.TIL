@@ -5,7 +5,28 @@
 선형 검색은 반복할 때마다 2가지 종료 조건을 체크함
 - 시간 복잡도 : O(n)
 
+```python
+def lin_search(x: Sequence, key:Any) -> int:
+    for i in range(len(x)):
+        if key == x[i]:
+            return i
+    else :
+        return -1
+```
+<실행>
+```python
+a = [1,5,88,3,4,6]
 
+ky = int(input('찾고싶은 정수를 입력하세요. :'))
+
+idx = lin_search(a,ky)
+
+if idx == -1:
+    print('검색 실패: 찾으려는 값이 없습니다.')
+else:
+    print(f'{ky}는 x[{idx}]에 있습니다.')
+
+```
 
 ## 보초법(Sentinel Method)
 : 검색하고자 하는 key값을 맨 끝에 넣어 비용을 줄임(종료조건이 필요 없음)
