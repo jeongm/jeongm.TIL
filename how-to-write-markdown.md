@@ -96,8 +96,8 @@ _text is slanted_
 __The text is bold__
 ~~cancelline~~
 ```
-*text is slanted*
-_text is slanted_
-**text is bold**
-__The text is bold__
-~~cancelline~~
+*text is slanted*   
+_text is slanted_   
+**text is bold**   
+__The text is bold__   
+~~cancelline~~   
