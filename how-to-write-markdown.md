@@ -88,3 +88,16 @@
 ```
 처음과 끝에```
 ```
+### 구문 강조
+```
+*text is slanted*
+_text is slanted_
+**text is bold**
+__The text is bold__
+~~cancelline~~
+```
+*text is slanted*
+_text is slanted_
+**text is bold**
+__The text is bold__
+~~cancelline~~
