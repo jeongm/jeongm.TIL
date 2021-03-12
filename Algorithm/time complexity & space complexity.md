@@ -39,3 +39,7 @@
   ex)길이가 n인 비밀번호를 찾아야 할 경우   
 ![timecomplexity1](https://joshuajangblog.files.wordpress.com/2016/09/1.jpg?w=638)
 ![timecomplexity2](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9941F43B5ABDBF4E1F)
+
+### 분할 상환 분석
+- N개의 작은 작업들을 순서대로 하는데, 각 작업에 걸리는 시간은 모두 다르지만 전체 작업에 걸리는 시간이 일정한 경우 적용할 수 있음
+- 이때 각 작업에 걸리는 평균 시간은 전체 시간을 작업의 개수로 나눈 것과 같다고 할 수 있다.
