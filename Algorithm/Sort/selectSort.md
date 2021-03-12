@@ -11,15 +11,15 @@ public class selectionSort {
 		
 		int A[] = {4,7,2,3,8,0}; 
 		
-		for(int i = 0; i < A.length; i++) {
+		for(int i = 0; i < A.length-1; i++) {
 			int mini = i;
 			for(int j = i+1; j < A.length; j++) {
 				if(A[mini] > A[j])
 					mini = j;
+			}
 			int tmp = A[i];
 			A[i] = A[mini];
 			A[mini] = tmp;	
-			}
 		}
 		
 		for(int i = 0 ;i < A.length;i++) {
