@@ -48,9 +48,15 @@ while(st.hasMoreToken()) {    // boolean hasMoreToken : 토큰이 남아있는�
     System.out.println(st.nextToken());   // String nextToken() : 다음 토큰을 반환
 }    
 ```
+```
+100
+200
+300
+400
+```
 > 필요시 추가
 
-### 백준(15552번 : 빠른 A+B)
+### 연관된 문제 : 백준(15552번 : 빠른 A+B)
 - https://www.acmicpc.net/problem/15552
 ```java
 import java.io.*;
