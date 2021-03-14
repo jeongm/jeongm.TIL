@@ -42,7 +42,11 @@ bw.close();   // 스트림을 닫아줌
 > ex) 10,20,30,40의 문자열을 ,구분자를 기준으로 슬라이싱하게 되면 4개의 문자열 획득 가능
 ```java
 string A = "100,200,300,400";
-StringTokenizer st = new StringTokenizer(a,",");  
+StringTokenizer st = new StringTokenizer(a,",");    // String Tokenizer(String str, String delim) : 문자열을 지정된 구분자로 만드는 String Tokenizer를 생성 
+                                                    //                                              구분자는 토큰으로 간주되지 않음
+while(st.hasMoreToken()) {    // boolean hasMoreToken : 토큰이 남아있는지 알려줌
+    System.out.println(st.nextToken());   // String nextToken() : 다음 토큰을 반환
+}    
 ```
 > 필요시 추가
 
