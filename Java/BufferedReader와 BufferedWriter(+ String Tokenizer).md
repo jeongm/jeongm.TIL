@@ -52,3 +52,28 @@ while(st.hasMoreToken()) {    // boolean hasMoreToken : 토큰이 남아있는�
 
 ### 백준(15552번 : 빠른 A+B)
 - https://www.acmicpc.net/problem/15552
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st;		// 긴 문자열을 지정된 구분자를 기준으로 문자열을 슬라이싱 하는데 사용함
+
+		int N = Integer.parseInt(br.readLine());
+		
+		for (int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine());
+			bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()))+ "\n");
+		}
+		bw.flush();
+		bw.close();
+	}
+
+}
+
+```
