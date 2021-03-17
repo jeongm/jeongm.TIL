@@ -9,9 +9,14 @@ public class JavaScanner{
         
         Scanner sc = new Scanner(System.in);  //Scanner객체 생성
         int x;
-        x = sc.nextInt();
+        x = sc.nextInt();  //입력받은 값을 정수로 변환해 저장
         System.out.println(x);
-        sc.close();
+        
+        String str;
+        str = sc.nextLine();  // 문자열 입력받기
+        System.out.println(str);
+        
+        sc.close(); //다쓰면 닫아야함 (누수 발생)
     }
  
 }
