@@ -37,6 +37,12 @@ members.add(new Member("홍길동",15));
 ArrayList에 값을 추가하려면 ArrayList의 add(index, value) 메소드를 사용하면 됩니다.    
 index를 생략하면 ArrayList 맨 뒤에 데이터가 추가되며 index중간에 값을 추가하면 해당 인덱스부터 마지막 인덱스까지 모두 1씩 뒤로 밀려납니다. 
 
+
+### 값 가져오기
+```java
+alist.get(2);
+```
+특정 인덱스에 위치한 엘리먼트를 가져올 때 사용. 
 ### 검색
 ```java
 ArrayList<Integer> alist = new ArrayList<Integer>(Arrays.asList(1,2,3));
