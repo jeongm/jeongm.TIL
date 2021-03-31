@@ -5,6 +5,9 @@ ArrayList는 List인터페이스를 상속받은 클래스로 *크기가 가변�
 
 ## ArrayList 사용법 - 선언
 ```java
+import java.util.ArrayList;
+...
+
 ArrayList alist = new ArrayList();  // 타입 미설정 시 object로 선언됨
 ArrayList<Integer> num = new ArrayList<Integer>();  
 ArrayList<Integer> num = new ArrayList<>(); 
