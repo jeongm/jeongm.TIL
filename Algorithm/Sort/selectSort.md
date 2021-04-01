@@ -27,7 +27,7 @@ public class selectionSort {
 			int tmp = A[i];
 			A[i] = A[mini];
 			A[mini] = tmp;	
-		}
+		}	// 시간복잡도 : O(n^2)
 		
 		for(int i = 0 ;i < A.length;i++) {
 			System.out.println(A[i] + " ");
