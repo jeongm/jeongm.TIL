@@ -1,45 +1,26 @@
 # n개의 원소 중 m개를 고르는 모든 조합을 찾는 알고리즘
-```java
-import java.util.*;
+```python
+def pick(n, m, picked):
 
-public class Main {
-	// n: 전체 원소의 수
-	// picked : 지금까지 고른 원소들의 번호
-	// toPick : 더 고를 원소의 수
-	// 일 때, 앞으로 toPick개의 원소를 고르는 모든 방법을 출력한다.
-	static void pick(int n, ArrayList<Integer> picked, int toPick)
-	{
-		// 기저 사례 : 더 고를 원소가 없을 때 고른 원소들을 출력한다.
-		if( toPick == 0) {
-			for(int pick : picked) {
-				System.out.print(pick);
-			}System.out.println();
-		}
-		// 고를 수 있는 가장 작은 번호를 계산한다.
-		int smallest = picked.isEmpty() ? 0 : picked.get(picked.size()-1) + 1;	// picked가 비어있으면 0, 아니면 가장작은친구 가져옴
+    if m == 0:
+        print(picked)
 
-		// 이 단계에서 원소 하나를 고른다.
-		for(int next = smallest; next < n; ++next) {
-			picked.add(next);
-			pick(n,picked,toPick-1);
-			picked.remove(picked.size()-1);
-		}
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		
-		int n = sc.nextInt(); // 전체 원소의 수
-		int m = sc.nextInt();	// 출력하고 싶은 원소의 수
-		
-		ArrayList<Integer> alist = new ArrayList<Integer>();
-		pick(n,alist,m);
-		
-		sc.close();
-	}
-	
-}
+    if not picked:
+        last = 0
+    else :
+        last = picked[len(picked)-1]+1
+
+    for i in range(last, n):
+        picked.append(i)
+        pick(n, m - 1, picked)
+        del picked[len(picked) - 1]
+
+if __name__ == '__main__':
+    a = []
+    n = int(input())
+    m = int(input())
+    pick(n, m, a)
+
 
 ```
 이 코드는 텅 빈 답에서 시작해서 매 단계마다 하나의 원소를 추가하는 일을 반복하다가,    
